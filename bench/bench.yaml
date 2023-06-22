@@ -84,10 +84,10 @@ problems:
     tests:
       - input: 1000
         repeat: 100
-        timeoutSeconds: 300
+        timeout_seconds: 300
       - input: 5000
         repeat: 100
-        timeoutSeconds: 300
+        timeout_seconds: 300
   # - name: fannkuch-redux
   #   unittests:
   #     - input: 7
