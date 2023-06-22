@@ -1,5 +1,5 @@
 lang: rust
-# problems:
+problems:
 #   - name: helloworld
 #     source:
 #       - 1.rs
