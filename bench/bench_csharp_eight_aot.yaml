@@ -77,7 +77,7 @@ environments:
     compiler: dotnet
     version: 8
     compiler_version_command: dotnet
-    docker: mcr.microsoft.com/dotnet/nightly/sdk:8.0-preview
+    docker: mcr.microsoft.com/dotnet/nightly/sdk:8.0.100-preview.5-jammy
     # docker_volumns:
     #   - /tmp/.nuget/packages:/root/.nuget/packages
     include: dotnet_eight_aot
