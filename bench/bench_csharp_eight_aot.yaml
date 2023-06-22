@@ -80,7 +80,7 @@ environments:
     docker: mcr.microsoft.com/dotnet/nightly/sdk:8.0-preview
     # docker_volumns:
     #   - /tmp/.nuget/packages:/root/.nuget/packages
-    include: dotnet_eight
+    include: dotnet_eight_aot
     build: dotnet publish -c Release -r linux-x64 -f net8 --self-contained true -p:PublishSingleFile=true -o pub # -p:PublishReadyToRun=true
     after_build:
       - mv pub/app out
