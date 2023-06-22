@@ -41,6 +41,8 @@ problems:
       - 1.cs
       - 2.cs
       - 3.cs
+      - 9.cs
+      - 9-m.cs
   # - name: json-serde
   #   source:
   #     - 1.cs
