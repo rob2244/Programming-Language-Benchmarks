@@ -74,7 +74,7 @@ environments:
   - os: linux
     compiler: dotnet
     version: 8
-    compiler_version_command: dotnet --version
+    compiler_version_command: dotnet/aot
     docker: mcr.microsoft.com/dotnet/nightly/sdk:8.0-preview
     # docker_volumns:
     #   - /tmp/.nuget/packages:/root/.nuget/packages

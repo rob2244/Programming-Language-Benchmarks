@@ -1,4 +1,4 @@
-# problems:
+problems:
 #   - name: helloworld
 #     trivial: true
 #     unittests:
@@ -179,5 +179,5 @@
 #     tests:
 #       - input: 500
 #       - input: 2000
-# tmp_dir: _bench
-# docker_cmd: podman
+tmp_dir: _bench
+docker_cmd: podman
