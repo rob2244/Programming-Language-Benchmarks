@@ -13,6 +13,7 @@ problems:
   # - name: nbody
   #   source:
   #     - 8.cs
+  #     - 9.cs
   # - name: spectral-norm
   #   source:
   #     - 3.cs
@@ -38,11 +39,21 @@ problems:
   - name: mandelbrot
     source:
       - 1.cs
-      - 3.cs
       - 2.cs
+      - 3.cs
+  # - name: json-serde
+  #   source:
+  #     - 1.cs
+  #     - 2.cs
   # - name: coro-prime-sieve
   #   source:
   #     - 1.cs
+  # - name: http-server
+  #   source:
+  #     - 1.cs
+  #     - 2.cs
+  #     - 2-http2.cs
+  #     - 2-http3.cs
   # - name: nsieve
   #   source:
   #     - 1.cs
@@ -61,11 +72,14 @@ runtime_version_regex:
 source_rename_to: app.cs
 environments:
   - os: linux
-    compiler: dotnet/aot
-    version: 7
+    compiler: dotnet
+    version: 8
     compiler_version_command: dotnet --version
-    include: dotnet
-    build: dotnet publish -c Release -r linux-x64 -f net7 -p:PublishAot=true -o pub
+    docker: mcr.microsoft.com/dotnet/nightly/sdk:8.0-preview
+    # docker_volumns:
+    #   - /tmp/.nuget/packages:/root/.nuget/packages
+    include: dotnet_eight
+    build: dotnet publish -c Release -r linux-x64 -f net8 --self-contained true -p:PublishAot=true -p:PublishSingleFile=true -o pub # -p:PublishReadyToRun=true
     after_build:
       - mv pub/app out
     out_dir: out

@@ -1,89 +1,89 @@
 lang: rust
 problems:
-  - name: helloworld
-    source:
-      - 1.rs
-  - name: binarytrees
-    source:
-      - 3.rs
-      - 4.rs
-      - 5.rs
-  - name: merkletrees
-    source:
-      - 1.rs
-  - name: nbody
-    source:
-      - 1.rs
-      - 2.rs
-      - 4-i.rs
-      - 7-i.rs
-  - name: spectral-norm
-    source:
-      - 2.rs
-      - 2-m.rs
-      - 7.rs
-      - 7-m.rs
+  # - name: helloworld
+  #   source:
+  #     - 1.rs
+  # - name: binarytrees
+  #   source:
+  #     - 3.rs
+  #     - 4.rs
+  #     - 5.rs
+  # - name: merkletrees
+  #   source:
+  #     - 1.rs
+  # - name: nbody
+  #   source:
+  #     - 1.rs
+  #     - 2.rs
+  #     - 4-i.rs
+  #     - 7-i.rs
+  # - name: spectral-norm
+  #   source:
+  #     - 2.rs
+  #     - 2-m.rs
+  #     - 7.rs
+  #     - 7-m.rs
   - name: mandelbrot
     source:
       - 8.rs
-  - name: fasta
-    source:
-      - 1.rs
-      - 5-m.rs
-  - name: knucleotide
-    source:
-      - 8.rs
-      - 8-m.rs
-  - name: regex-redux
-    source:
-      - 7.rs
-  - name: fannkuch-redux
-    source:
-      - 1.rs
-      - 1-m.rs
-      - 2-i.rs
-      - 2-im.rs
-      - 3-i.rs
-      - 3-im.rs
-      - 5-m.rs
-  - name: pidigits
-    source:
-      - 1.rs
-      - 2.rs
-  - name: edigits
-    source:
-      - 1.rs
-      - 2.rs
-  - name: json-serde
-    source:
-      - 1.rs
-      - 2.rs
-      - 3.rs
-  - name: coro-prime-sieve
-    source:
-      - 1.rs
-      - 3.rs
-      - 3-m.rs
-      - 4.rs
-      - 5.rs
-  - name: http-server
-    source:
-      - 1.rs
-      - 1-http2.rs
-      - 2.rs
-      - 2-http2.rs
-  - name: nsieve
-    source:
-      - 1.rs
-      - 2.rs
-  - name: lru
-    source:
-      - 0-unsafe.rs
-      - 1.rs
-  - name: secp256k1
-    source:
-      - 0.rs
-      - 1.rs
+  # - name: fasta
+  #   source:
+  #     - 1.rs
+  #     - 5-m.rs
+  # - name: knucleotide
+  #   source:
+  #     - 8.rs
+  #     - 8-m.rs
+  # - name: regex-redux
+  #   source:
+  #     - 7.rs
+  # - name: fannkuch-redux
+  #   source:
+  #     - 1.rs
+  #     - 1-m.rs
+  #     - 2-i.rs
+  #     - 2-im.rs
+  #     - 3-i.rs
+  #     - 3-im.rs
+  #     - 5-m.rs
+  # - name: pidigits
+  #   source:
+  #     - 1.rs
+  #     - 2.rs
+  # - name: edigits
+  #   source:
+  #     - 1.rs
+  #     - 2.rs
+  # - name: json-serde
+  #   source:
+  #     - 1.rs
+  #     - 2.rs
+  #     - 3.rs
+  # - name: coro-prime-sieve
+  #   source:
+  #     - 1.rs
+  #     - 3.rs
+  #     - 3-m.rs
+  #     - 4.rs
+  #     - 5.rs
+  # - name: http-server
+  #   source:
+  #     - 1.rs
+  #     - 1-http2.rs
+  #     - 2.rs
+  #     - 2-http2.rs
+  # - name: nsieve
+  #   source:
+  #     - 1.rs
+  #     - 2.rs
+  # - name: lru
+  #   source:
+  #     - 0-unsafe.rs
+  #     - 1.rs
+  # - name: secp256k1
+  #   source:
+  #     - 0.rs
+  #     - 1.rs
 source_rename_to: main.rs
 compiler_version_command: rustc -V
 compiler_version_regex:
