@@ -39,7 +39,7 @@ problems:
     source:
       - 1.cs
       - 3.cs
-      - 2.cs
+#      - 2.cs
       - 9.cs
       - 9-m.cs
   # - name: coro-prime-sieve
